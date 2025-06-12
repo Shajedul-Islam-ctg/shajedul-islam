@@ -74,7 +74,7 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I am a dedicated student of Geography and Environment, deeply interested in understanding the Earth, human behavior, and religion. I enjoy exploring new ideas and contributing to projects related to GIS, environmental research, and cultural understanding.</p>
+    <p>I am a dedicated student of Geography and Environment, deeply interested in understanding the Earth, human behaviour, and religion. I enjoy exploring new ideas and contributing to projects related to GIS, environmental research, and cultural understanding.</p>
   </section>
 
   <section id="projects">
