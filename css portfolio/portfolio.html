@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shajedul Islam - Personal Portfolio</title>
+    <!-- Link to Google Fonts for 'Inter' -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to your custom CSS file -->
+    <style>
+        /*
+          CSS for a Personal Portfolio Website - Initial Setup
+
+          This stylesheet provides a foundational set of styles for a clean,
+          responsive, and modern personal portfolio. It includes global resets,
+          typography, basic layout, and responsive adjustments.
+
+          Feel free to modify values (colors, fonts, sizes) to match your
+          personal brand and aesthetic!
+        */
+
+        /* --- 1. Global Resets & Base Styles --- */
+
+        /* Apply a border-box model for easier layout calculations */
+        *,
+        *::before,
+        *::after {
+          box-sizing: border-box;
+        }
+        /* Basic body styles: font, background, text color */
+        body {
+          font-family: 'Inter', sans-serif; /* Using Inter, a clean modern font */
+          line-height: 1.6; /* Improve readability */
+          margin: 0; /* Remove default body margin */
+          padding: 0; /* Remove default body padding */
+          background-color: #f8f8f8; /* Light background color */
+          color: #333; /* Dark grey text color for good contrast */
+          -webkit-font-smoothing: antialiased; /* Smoother font rendering */
+          -moz-osx-font-smoothing: grayscale; /* Smoother font rendering */
+        }
+
+        /* Ensure HTML takes full height */
+        html {
+          height: 100%;
+        }
+
+        /* --- 2. Typography --- */
+
+        h1, h2, h3, h4, h5, h6 {
+          font-family: 'Inter', sans-serif; /* Keep consistent font for headings */
+          color: #222; /* Slightly darker heading color */
+          margin-top: 1.5em; /* Space above headings */
+          margin-bottom: 0.5em; /* Space below headings */
+          line-height: 1.2;
+        }
+
+        h1 {
+          font-size: 2.8em; /* Larger for main titles */
+          text-align: center;
+          margin-bottom: 1em;
+        }
+
+        h2 {
+          font-size: 2em;
+        }
+
+        p {
+          margin-bottom: 1em; /* Space between paragraphs */
+        }
+
+        a {
+          color: #007bff; /* Standard link color */
+          text-decoration: none; /* Remove underline */
+          transition: color 0.3s ease; /* Smooth transition on hover */
+        }
+
+        a:hover {
+          color: #0056b3; /* Darker on hover */
+          text-decoration: underline; /* Add underline on hover */
+        }
+
+        /* --- 3. Layout Basics --- */
+
+        /* Main container for content to keep it centered and readable */
+        .container {
+          max-width: 1200px; /* Maximum width for content */
+          margin: 0 auto; /* Center the container horizontally */
+          padding: 20px; /* Padding on the sides */
+          background-color: #fff; /* White background for content area */
+          border-radius: 12px; /* Nicely rounded corners */
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
+          margin-top: 40px; /* Space from the top of the page */
+          margin-bottom: 40px; /* Space from the bottom of the page */
+        }
+
+        /* Section styling for consistent padding and spacing */
+        section {
+          padding: 40px 0; /* Vertical padding for sections */
+          margin-bottom: 20px; /* Space between sections */
+        }
+
+        /* --- 4. Buttons (Example) --- */
+
+        .button {
+          display: inline-block; /* Allows padding and margin */
+          background-color: #007bff; /* Primary button color */
+          color: #fff; /* White text */
+          padding: 12px 25px; /* Padding inside the button */
+          border: none; /* No border */
+          border-radius: 8px; /* Rounded corners for buttons */
+          cursor: pointer; /* Indicate it's clickable */
+          font-size: 1em;
+          transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+        }
+
+        .button:hover {
+          background-color: #0056b3; /* Darker on hover */
+          transform: translateY(-2px); /* Slight lift on hover */
+        }
+
+        /* --- 5. Images (Example) --- */
+
+        img {
+          max-width: 100%; /* Ensure images don't overflow their containers */
+          height: auto; /* Maintain aspect ratio */
+          display: block; /* Remove extra space below images */
+          border-radius: 8px; /* Rounded corners for images */
+        }
+
+        /* --- 6. Responsive Design (Basic Media Query) --- */
+
+        /* Adjustments for smaller screens (e.g., mobile phones) */
+        @media (max-width: 768px) {
+          .container {
+            padding: 15px; /* Less padding on smaller screens */
+            margin-top: 20px;
+            margin-bottom: 20px;
+          }
+
+          h1 {
+            font-size: 2.2em; /* Smaller headings on mobile */
+          }
+
+          h2 {
+            font-size: 1.8em;
+          }
+
+          section {
+            padding: 30px 0;
+          }
+        }
+
+        /* Adjustments for even smaller screens (e.g., very small phones) */
+        @media (max-width: 480px) {
+          h1 {
+            font-size: 1.8em;
+          }
+
+          h2 {
+            font-size: 1.5em;
+          }
+
+          .button {
+            padding: 10px 20px;
+            font-size: 0.9em;
+          }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Md.Shajedul Islam</h1>
+            <p>Bekar | Ajira | Alos</p>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="Images/IMG_20240416_164441255_MFNR_PORTRAIT.jpg" alt="Your Photo" style="float: right; margin-left: 20px; margin-bottom: 20px;">
+            <p>Hi there! I'm Md.Shajedul Islam, a passionate web developer with a knack for creating beautiful and functional websites. I love bringing ideas to life through code and design, focusing on user-friendly experiences.</p>
+            <p>My journey in web development started with a curiosity for how websites work, and it quickly grew into a passion for building them. I enjoy solving problems and continuously learning new technologies to improve my craft.</p>
+            <p>When I'm not coding, you can find me [mention a hobby, e.g., reading, hiking, playing games]. Feel free to explore my work and get in touch!</p>
+            <button class="button">Download Resume</button>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React.js</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Responsive Design</span>
+                <span class="skill-tag">UI/UX Principles</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="https://placehold.co/400x250/d0d0d0/333333?text=Project+1+Image" alt="Project 1">
+                    <h3>Project Title One</h3>
+                    <p>A brief description of Project One, highlighting its purpose and the technologies used. This could be a web application, a design concept, or a coding challenge.</p>
+                    <a href="#" class="button" style="margin-right: 10px;">View Live</a>
+                    <a href="#" class="button" style="background-color: #6c757d;">GitHub Repo</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="https://placehold.co/400x250/d0d0d0/333333?text=Project+2+Image" alt="Project 2">
+                    <h3>Project Title Two</h3>
+                    <p>Description for Project Two. Focus on the problem it solves and your contribution. Maybe it's a mobile-first design or a backend API.</p>
+                    <a href="#" class="button" style="margin-right: 10px;">View Live</a>
+                    <a href="#" class="button" style="background-color: #6c757d;">GitHub Repo</a>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="https://placehold.co/400x250/d0d0d0/333333?text=Project+3+Image" alt="Project 3">
+                    <h3>Project Title Three</h3>
+                    <p>Details about Project Three. What did you learn? What challenges did you overcome? Make it engaging!</p>
+                    <a href="#" class="button" style="margin-right: 10px;">View Live</a>
+                    <a href="#" class="button" style="background-color: #6c757d;">GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Have a project in mind or just want to say hello? Feel free to reach out!</p>
+            <form action="#" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="button">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="https://www.facebook.com/shajedul.islam.saikot" target="_blank">Facebook</a>
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Shajedul Islam. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Additional CSS for specific elements in this HTML -->
+    <style>
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 12px; /* Rounded corners for header */
+            margin-top: 40px; /* Space from top */
+            margin-bottom: 20px; /* Space below header */
+        }
+
+        header .container {
+            background-color: transparent; /* Make header container background transparent */
+            box-shadow: none; /* Remove shadow from header container */
+            padding: 0; /* Remove padding from header container */
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        header h1 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        header nav a {
+            color: #fff;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        header nav a:hover {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .skill-tag {
+            background-color: #e9ecef;
+            color: #495057;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            margin: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background-color: #dee2e6;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            background-color: #fefefe;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card img {
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: #222;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+            width: 100%;
+        }
+
+        .contact-form textarea {
+            resize: vertical; /* Allow vertical resizing */
+        }
+
+        .contact-form button {
+            align-self: flex-start; /* Align button to the left */
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            border-radius: 12px; /* Rounded corners for footer */
+            margin-top: 20px; /* Space from content */
+        }
+
+        footer .container {
+            background-color: transparent; /* Make footer container background transparent */
+            box-shadow: none; /* Remove shadow from footer container */
+            padding: 0; /* Remove padding from footer container */
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        /* Responsive adjustments for project grid */
+        @media (max-width: 768px) {
+            .project-grid {
+                grid-template-columns: 1fr; /* Stack projects on smaller screens */
+            }
+
+            .about-content img {
+                float: none;
+                margin: 0 auto 20px auto;
+            }
+        }
+    </style>
+</body>
+</html>
